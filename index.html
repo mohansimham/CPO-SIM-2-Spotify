@@ -194,6 +194,13 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);li
 .learn-card .learn-example{background:var(--light);border-radius:10px;padding:16px;margin-top:14px;}
 .learn-card .learn-example h4{font-size:.82em;font-weight:700;color:var(--navy);margin-bottom:6px;}
 .learn-card .learn-example p{font-size:.85em;color:var(--muted);margin-bottom:0;font-style:italic;}
+.learn-card .learn-framework{background:#1a1a2e;border-radius:10px;padding:18px 20px;margin-top:14px;border-left:3px solid var(--accent);}
+.learn-card .learn-framework h4{font-size:.82em;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.learn-card .learn-framework ol{list-style:none;padding:0;margin:0;counter-reset:fw;}
+.learn-card .learn-framework ol li{counter-increment:fw;font-size:.84em;color:rgba(255,255,255,.75);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);line-height:1.5;}
+.learn-card .learn-framework ol li:last-child{border-bottom:none;}
+.learn-card .learn-framework ol li::before{content:counter(fw) ". ";color:var(--accent);font-weight:700;}
+.learn-card .learn-framework ol li span{color:rgba(255,255,255,.4);font-size:.9em;}
 .learn-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;}
 .learn-dots{display:flex;gap:8px;}
 .learn-dot{width:10px;height:10px;border-radius:50%;background:var(--border);transition:background .2s;}
@@ -355,6 +362,19 @@ footer a{color:#556677;text-decoration:none;}
         <h4>Example</h4>
         <p>Spotify offers a free tier with ads and a premium tier without. Should they raise premium prices, add a cheaper tier, or push more users toward free? Each path reshapes the entire business model.</p>
       </div>
+      <div class="learn-framework">
+        <h4>Business Model Canvas</h4>
+        <ol>
+          <li>Value Proposition <span>— What pain do you solve? What gain do you create?</span></li>
+          <li>Customer Segments <span>— Who pays? Who uses? Are they the same person?</span></li>
+          <li>Revenue Streams <span>— Subscription, ads, transaction fees, licensing? Which dominates?</span></li>
+          <li>Cost Structure <span>— Fixed vs variable. What scales linearly vs what has leverage?</span></li>
+          <li>Key Resources <span>— Technology, content, data, brand, network effects?</span></li>
+          <li>Channels <span>— How do customers discover and access your product?</span></li>
+          <li>Key Partnerships <span>— Who do you depend on? Labels, creators, distributors?</span></li>
+          <li>Unfair Advantage <span>— What's defensible? What can't competitors copy easily?</span></li>
+        </ol>
+      </div>
       <div class="learn-nav">
         <span class="learn-counter">1 of 4</span>
         <div class="learn-dots"><span class="learn-dot active"></span><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot"></span></div>
@@ -374,6 +394,17 @@ footer a{color:#556677;text-decoration:none;}
       <div class="learn-example">
         <h4>Example</h4>
         <p>Apple enters music streaming with deep pockets and a built-in user base. Spotify must decide: compete on price, differentiate on features, or expand into new content like podcasts to reduce dependence on labels.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Porter's Five Forces Template</h4>
+        <ol>
+          <li>Competitive Rivalry <span>— How many competitors? How differentiated? Price wars?</span></li>
+          <li>Threat of New Entrants <span>— Barriers to entry: capital, regulation, network effects, brand?</span></li>
+          <li>Threat of Substitutes <span>— What else could customers use instead? How easy to switch?</span></li>
+          <li>Bargaining Power of Suppliers <span>— How dependent are you on content/data/infra providers?</span></li>
+          <li>Bargaining Power of Buyers <span>— Can customers easily switch? How price-sensitive are they?</span></li>
+          <li>Strategic Implication <span>— Which force is strongest? That's where you invest defensively.</span></li>
+        </ol>
       </div>
       <div class="learn-nav">
         <span class="learn-counter">2 of 4</span>
@@ -395,6 +426,17 @@ footer a{color:#556677;text-decoration:none;}
         <h4>Example</h4>
         <p>Spotify acquires podcast companies like Gimlet and Anchor to own exclusive content and reduce label dependence. But does owning production studios fit a platform company's DNA?</p>
       </div>
+      <div class="learn-framework">
+        <h4>Build vs Buy Decision Matrix</h4>
+        <ol>
+          <li>Core vs Peripheral <span>— Is this capability central to your value prop? Core = build.</span></li>
+          <li>Time to Market <span>— How urgent? Buy saves 12-18 months. Build takes longer but fits better.</span></li>
+          <li>Talent Acquisition <span>— Are you buying the product or the team? Acqui-hires have different logic.</span></li>
+          <li>Integration Risk <span>— How hard is it to merge cultures, codebases, and roadmaps?</span></li>
+          <li>Total Cost of Ownership <span>— Acquisition price + integration cost + retention packages vs build cost.</span></li>
+          <li>Strategic Optionality <span>— Does buying open new markets or just accelerate existing plans?</span></li>
+        </ol>
+      </div>
       <div class="learn-nav">
         <span class="learn-counter">3 of 4</span>
         <div class="learn-dots"><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot active"></span><span class="learn-dot"></span></div>
@@ -414,6 +456,17 @@ footer a{color:#556677;text-decoration:none;}
       <div class="learn-example">
         <h4>Example</h4>
         <p>Spotify Wrapped turns user data into a viral marketing moment. It's a product design decision that drives growth — should they invest more in features that users share, or focus on core listening experience?</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Product Design Sprint</h4>
+        <ol>
+          <li>Understand <span>— Day 1: Map the user journey. Identify the biggest pain point.</span></li>
+          <li>Diverge <span>— Day 2: Generate multiple solutions. No filtering. Quantity over quality.</span></li>
+          <li>Decide <span>— Day 3: Vote on solutions. Pick one to prototype. Commit.</span></li>
+          <li>Prototype <span>— Day 4: Build a realistic mockup. Just enough fidelity to test.</span></li>
+          <li>Validate <span>— Day 5: Test with 5 real users. Watch, listen, learn.</span></li>
+          <li>Iterate or Kill <span>— Based on findings: refine the solution, pivot, or move on.</span></li>
+        </ol>
       </div>
       <div class="learn-nav">
         <span class="learn-counter">4 of 4</span>
